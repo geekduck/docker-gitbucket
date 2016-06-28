@@ -7,9 +7,7 @@ RUN ln -s /gitbucket /root/.gitbucket
 
 VOLUME /gitbucket
 
-RUN apk update \
-    && apk add openssl \
-    && rm -rf /var/cache/apk/*
+RUN apk --no-cache add openssl
 
 # download gitbucket
 RUN wget https://github.com/gitbucket/gitbucket/releases/download/4.1/gitbucket.war
