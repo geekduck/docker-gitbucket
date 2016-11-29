@@ -10,7 +10,7 @@ VOLUME /gitbucket
 RUN apk --no-cache add openssl
 
 # download gitbucket
-RUN wget https://github.com/gitbucket/gitbucket/releases/download/4.6/gitbucket.war
+RUN wget https://github.com/gitbucket/gitbucket/releases/download/4.7.1/gitbucket.war
 
 EXPOSE 8080 29418
 
